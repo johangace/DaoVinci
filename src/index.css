@@ -4,22 +4,33 @@ body {
   font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #7700ee;
-  color: #fff;
-  overflow-x: hidden;
+  /* background-color: #7700ee; */
+  background: rgb(119,0,238);
+  /* background: radial-gradient(circle, rgba(119,0,238,1) 0%, rgba(249,156,4,1) 43%, rgba(159,255,92,1) 86%, rgba(63,118,250,1) 100%);  overflow-x: hidden; */
+  background: radial-gradient(circle, rgba(119,0,238,1) 0%, rgba(249,156,4,1) 30%, rgba(159,255,92,1) 69%, rgba(63,118,250,1) 98%);
+  
+background: linear-gradient(90deg, rgba(119,0,238,1) 0%, rgba(249,156,4,1) 30%, rgba(159,255,92,1) 69%, rgba(63,118,250,1) 98%);
 }
+
+
 #root {
   min-height: 100vh;
   display: flex;
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 3rem;
   }
+}
+
+.header{
+  display: block;
+  margin: 20px;
 }
 
 .unsupported-network {
